@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="phoneChai">
+  <head >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Phone Chai</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body ng-controller="PhoneChaiCtrl">
+      <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="header-part">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="brand" href="#"> 
+                  Phone Chai
+                </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">
+                  <span aria-hidden="true"></span>
+                    <i class="fa fa-balance-scale"></i> Comparison box (3)</a></li>
+                  <li><a href="#">
+                  <span  aria-hidden="true"></span>
+                  <i class="fa fa-share"></i> Share this Site</a></li>
+                  <li><a href="#">
+                  <span aria-hidden="true"></span>
+                  <i class="fa fa-envelope-o"></i> Contacts Us</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+
+          <div class="row">  <!--body start-->
+              <div class="col-md-3">
+                <div class="panel panel-default panel-manual">
+                  <div class="panel-heading">
+                    <h3 class="panel-title text-center">Most Popular Mobiles</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search for your mobile">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                          </span>
+                        </div>  <!-- /input-group -->
+                    </div>
+
+                    <div class="row" id="left-panel-navtabs">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        <div class="panel panel-default panel-manual">
+                          <div class="panel-heading" role="tab" id="headingOne">
+                            <h3 class="panel-title font-16" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <span  aria-hidden="true"></span> <i class="fa fa-outdent font-icon-left-side"></i> Processor
+                            </h3>
+                          </div>
+
+                          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      256 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      512 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                      1 GB
+                                    </label>
+                                  </div>
+                            </div>   <!--Panel body-->
+                          </div>
+                        </div> <!--panel panel-default panel-manual-->
+
+                        <div class="panel panel-default panel-manual">
+                          <div class="panel-heading" role="tab" id="headingTwo">
+                            <h3 class="panel-title collapsed font-16"  role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <span  aria-hidden="true"></span>
+                              <i class="fa fa-film font-icon-left-side"></i> Ram
+                            </h3>
+                          </div>
+                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                              <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      256 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      512 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                      1 GB
+                                    </label>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>  <!--panel panel-default panel-manual-->
+
+                        <div class="panel panel-default panel-manual">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h3 class="panel-title collapsed font-16" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <span  aria-hidden="true"></span>
+                           <i class="fa fa-registered font-icon-left-side"></i> Rom
+                          </h3>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      256 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      512 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                      1 GB
+                                    </label>
+                                  </div>
+                          </div>
+                        </div>
+                      </div> <!--panel panel-default panel-manual-->
+
+                      <div class="panel panel-default panel-manual">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h3 class="panel-title collapsed font-16" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          <span aria-hidden="true"></span>
+                          <i class="fa fa-television font-icon-left-side"></i> Display
+                          </h3>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      256 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      512 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                      1 GB
+                                    </label>
+                                  </div>
+                          </div>
+                        </div>
+                      </div> <!--panel panel-default panel-manual-->
+
+                      <div class="panel panel-default panel-manual">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h3 class="panel-title collapsed font-16" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                           Camera
+                          </h3>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                      256 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                      512 MB
+                                    </label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label>
+                                      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                                      1 GB
+                                    </label>
+                                  </div>
+                          </div>
+                        </div>
+                      </div> <!--panel panel-default panel-manual-->
+
+
+                    </div>  <!--panel group, accrodion-->
+                    </div>
+                  </div>  <!-- Panel body -->
+                </div>
+              </div> <!-- col-md-3 -->
+
+        
+        <div class="col-md-9">
+            <div class="row">  <!--search result row-->
+              <ul class="serch-paremeter-list list-inline text-center">
+                <li><p>Total 120 Mobiles Found</p></li>
+                <li><p>Showing 10 Mobiles out of 20</p></li>
+                <li><p>Order By</p></li>
+                <li><div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Popularity
+                      <span class="caret"></span> 
+                    </button>
+                    <ul class="dropdown-menu text-left" aria-labelledby="dropdownMenu1">
+                      <li><a class="text-left" href="#">Price</a></li>
+                      <li><a class="text-left" href="#">Relese Date</a></li>
+                      <li><a class="text-left" href="#">Screen Size</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a class="text-left" href="#">OS</a></li>
+                    </ul>
+                  </div></li>
+                  <li><p>In</p></li>
+                  <li><div class="dropdown">
+
+                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Ascending
+                      <span class="caret"></span> 
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a class="text-left" href="#">Decending</a></li>
+                    </ul>
+                  </div></li>
+                  <li><p>Current Filters <button class="btn btn-default" id="toggle-button"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button> </p></li>
+              </ul>
+            </div>  <!--Search result row-->
+
+            <div class="row" id="requirment-row">   <!--Requirment row-->
+                <div class="btn btn-primary select-device" ng-repeat="selectMobile in selectMobiles">
+                    <span>{{selectMobile.name}}</span> <span>{{selectMobile.quantity}}</span>   <span class="badge badge-cursor"><i class="fa fa-times"></i></span>
+                </div>
+            </div>  <!--Requirment row-->  
+
+                <div class="mobile-display" id="thumbnail-row">  <!--thumbnail row-->
+                  <div class="col-sm-6 col-md-3 " ng-repeat="mobile in mobiles">
+                    <div class="thumbnail mobile-box-height"  ng-hide="mobile1">
+                      <a  href="javascript:void(0)" ng-click="mobile1 = !mobile1">
+                        <img class="img-responsive" ng-src="{{mobile.image}}" alt="responsive-image">
+                      </a>
+                      <div class="caption">
+                        <h4 class="mobile-header-tag">{{mobile.name}}</h4>
+                        <p class="phone-specification" >
+                            <span>Performance Rating</span> <br>
+                            <span>Average Price:{{mobile.price}}</span>  <br>
+                            <span>Satus:{{mobile.status}}</span>  <br>
+                            {{mobile.comment}}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="thumbnail mobile-box-height"  ng-show="mobile1" >
+                       <i ng-click="mobile1 = !mobile1" class="fa fa-times cross-font-icon pull-right"></i> <h4 class="mobile-header-tag">{{mobile.name}} </h4> 
+                        <p class="phone-specification" >
+                            <strong>Performance Rating</strong> <br>
+                            <strong>Average Price:</strong> {{mobile.price}}<br>
+                            <strong>Satus:</strong> {{mobile.status}} <br>
+                            {{mobile.comment}}<br>
+                            <strong>Performance Rating</strong> <br>
+                            <strong>Average Price:</strong> {{mobile.price}}<br>
+                            <strong>Satus:</strong> {{mobile.status}} <br>
+                            {{mobile.comment}}<br>
+                            <strong>Performance Rating</strong> <br>
+                            <strong>Average Price:</strong> {{mobile.price}}<br>
+                            <strong>Satus:</strong> {{mobile.status}} <br>
+                            {{mobile.comment}}
+                        </p>
+                    </div>
+                  </div>
+                  </div>
+                </div>  <!--thumbnail row-->
+
+        </div> <!-- col-md-9-->
+    </div>  <!-- Container fluid -->
+    </div>  <!--body start-->
+
+      </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#toggle-button").click(function(){
+              $("#requirment-row").toggle();
+          });
+      });
+      </script>
+  </body>
+</html>

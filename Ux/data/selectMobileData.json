@@ -1,0 +1,40 @@
+[
+ {
+ 	"name":"Processor",
+ 	"quantity":"Duar Core"
+ },
+ {
+ 	"name":"Ram",
+ 	"quantity":"2 GB"
+ },
+ {
+ 	"name":"Rom",
+ 	"quantity":"5 GB"
+ },
+ {
+ 	"name":"Display",
+ 	"quantity":"4 inch"
+ },
+ {
+ 	"name":"Camera",
+ 	"quantity":"3 MP"
+ },
+
+ {
+ 	"name":"Ram",
+ 	"quantity":"2 GB"
+ },
+ {
+ 	"name":"Rom",
+ 	"quantity":"5 GB"
+ },
+ {
+ 	"name":"Display",
+ 	"quantity":"4 inch"
+ },
+  {
+ 	"name":"Processor",
+ 	"quantity":"Duar Core"
+ }
+
+]
