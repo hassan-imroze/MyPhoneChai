@@ -26,6 +26,19 @@ namespace Phonechai.Model.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            context.Phones.Add(new Phone()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "Dead Nokia",
+                Brand = "Nokia",
+                Camera = "2MP",
+                Cpu = "1GHz",
+                Memory = "512MB",
+                Price = 20.0,
+                Resolution = "640*320",
+                Size = "4inch"
+            });
+            context.SaveChanges();
         }
     }
 }
