@@ -11,9 +11,17 @@ namespace Phonechai.Service
 {
     public class PhoneService
     {
+        BusinessDbContext _dbContext;
+
+        public PhoneService(BusinessDbContext db)
+        {
+            _dbContext = db;
+        }
+
         public List<PhoneViewModel> GetAll()
         {
-            PhoneRepository repository=new PhoneRepository(new BusinessDbContext());
+            
+            PhoneRepository repository=new PhoneRepository(_dbContext);
 
             IQueryable<Phone> queryable = repository.GetAll();
             var phoneViewModels = queryable.ToList().Select(x => new PhoneViewModel(x)).ToList();
