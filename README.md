@@ -1,2 +1,2 @@
 # PhoneChai
-Phonechai.com development repository
+Phonechai.com development repository for course
