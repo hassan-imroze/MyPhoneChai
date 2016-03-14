@@ -26,7 +26,9 @@ namespace Phonechai.Model.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            context.Phones.Add(new Phone()
+            context.Phones.AddOrUpdate(
+            p=>p.Name
+            , new Phone()
             {
                 Id = Guid.NewGuid().ToString(),
                 Name = "Dead Nokia",
@@ -37,6 +39,30 @@ namespace Phonechai.Model.Migrations
                 Price = 20.0,
                 Resolution = "640*320",
                 Size = "4inch"
+            }
+            , new Phone()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "Samsung Galaxy S5",
+                Brand = "Samsung",
+                Camera = "13MP",
+                Cpu = "3.2GHz Quad Core",
+                Memory = "2GB",
+                Price = 30000.0,
+                Resolution = "240ppi",
+                Size = "5 inch"
+            }
+            , new Phone()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "HTC One M7",
+                Brand = "HTC",
+                Camera = "4MP",
+                Cpu = "1.7 GHz Quad Core",
+                Memory = "2GB",
+                Price = 17000.0,
+                Resolution = "441ppi",
+                Size = "4.7 inch"
             });
             context.SaveChanges();
         }

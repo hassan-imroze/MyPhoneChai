@@ -13,6 +13,14 @@ namespace Phonechai.ViewModel
         {
             Id = phone.Id;
             Name = phone.Name;
+            Brand = phone.Brand;
+            Camera = phone.Camera;
+            Cpu = phone.Cpu;
+            Memory = phone.Memory;
+            Price = phone.Price;
+            Resolution = phone.Resolution;
+            Size = phone.Size;
+
         }
 
         public string Id { get; set; }
