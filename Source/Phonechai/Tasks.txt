@@ -1,0 +1,1 @@
+test how UI Router Works: http://plnkr.co/edit/IzimSVsstarlFviAm7S7?p=preview
