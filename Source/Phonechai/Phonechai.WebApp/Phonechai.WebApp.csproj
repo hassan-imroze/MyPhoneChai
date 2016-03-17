@@ -239,6 +239,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="Partials\Account\signin.tpl.html" />
+    <Content Include="Partials\Home\home.tpl.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -357,6 +359,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="App\App.Config.ts" />
+    <TypeScriptCompile Include="App\HomeController.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-ui-router\angular-ui-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />

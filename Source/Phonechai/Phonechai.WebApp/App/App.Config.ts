@@ -13,17 +13,17 @@
                 .state("root", {
                     abstract: true,
                     url: "",
-                    template: "<div ui-view class=\"container-fluid slide\"></div>",
+                    template: "<span>Hello World.</span><div ui-view class=\"container-fluid slide\"></div>",
                 })
                 .state("root.home", {
                     url: "/",
-                    views: {
-                        "":
-                        {
-                            template: "<h1>Hello.</h1>"
-                        }
-                    }
-                });
+                    templateUrl: "Partials/Home/home.tpl.html",
+                    controller: "HomeController",
+                    controllerAs: "vm"
+
+                }).state("root.signin",{
+                url: "/signin",
+                templateUrl: "Partials/Account/signin.tpl.html"});
         }
     }
   
