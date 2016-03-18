@@ -23,7 +23,7 @@ namespace Phonechai.WebApp.Controllers
         {
             if (string.IsNullOrEmpty(phone.Id))
             {
-                phone.Id = (new Guid()).ToString();
+                phone.Id = Guid.NewGuid().ToString();
             }
             string id = service.Add(phone);
             return Ok(id);

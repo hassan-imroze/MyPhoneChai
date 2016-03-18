@@ -31,6 +31,42 @@
             return deffered.promise;
         }
 
+        GetDetail(id) {
+            var self = this;
+            var deffered = this.qService.defer();
+
+            var successCallback = result => {
+                console.log(result);
+                return deffered.resolve(result);
+            };
+            var errorCallback = error => {
+                console.log(error);
+                return deffered.reject(error);
+            };
+
+            self.httpService.get("/api/PhoneQuery?id=" + id)
+                .then(successCallback, errorCallback);
+            return deffered.promise;
+        }
+
+        Save(data: Phone): angular.IPromise<any> {
+            var self = this;
+            var deffered = this.qService.defer();
+
+            var successCallback = result => {
+                console.log(result);
+                return deffered.resolve(result);
+            };
+            var errorCallback = error => {
+                console.log(error);
+                return deffered.reject(error);
+            };
+
+            self.httpService.post("/api/phone", data)
+                .then(successCallback, errorCallback);
+            return deffered.promise;
+        }
+
     }
     angular.module("app").service("PhoneService", PhoneService);
 }

@@ -243,6 +243,7 @@
     <Content Include="index.html" />
     <Content Include="Partials\Account\signin.tpl.html" />
     <Content Include="Partials\Home\home.tpl.html" />
+    <Content Include="Partials\Phone\phone-entry.tpl.html" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-aria.js" />
@@ -365,6 +366,7 @@
     <TypeScriptCompile Include="App\App.Config.ts" />
     <TypeScriptCompile Include="App\HomeController.ts" />
     <TypeScriptCompile Include="App\Phone.ts" />
+    <TypeScriptCompile Include="App\PhoneController.ts" />
     <TypeScriptCompile Include="App\PhoneQueryController.ts" />
     <TypeScriptCompile Include="App\PhoneService.ts" />
     <TypeScriptCompile Include="Scripts\typings\angular-ui-router\angular-ui-router.d.ts" />
