@@ -9,23 +9,42 @@ using Phonechai.ViewModel;
 
 namespace Phonechai.Service
 {
-    public class PhoneService
+    public class PhoneService : BaseService
     {
-        BusinessDbContext _dbContext;
+        PhoneRepository repository;
 
-        public PhoneService(BusinessDbContext db)
+        public PhoneService(BusinessDbContext db): base(db)
         {
-            _dbContext = db;
+            repository = new PhoneRepository(_dbContext);
         }
 
         public List<PhoneViewModel> GetAll()
         {
             
-            PhoneRepository repository=new PhoneRepository(_dbContext);
+            
 
             IQueryable<Phone> queryable = repository.GetAll();
             var phoneViewModels = queryable.ToList().Select(x => new PhoneViewModel(x)).ToList();
             return phoneViewModels;
         }
+
+        public PhoneViewModel GetDetail(string id)
+        {
+            return repository.GetDetail(id);
+        }
+
+        public string Add(Phone phone)
+        {
+            bool exists = repository.Exists(phone.Id);
+            if (exists)
+            {
+                return repository.Update(phone);
+            }
+            return repository.Add(phone);
+        }
+
+       
     }
+
+   
 }

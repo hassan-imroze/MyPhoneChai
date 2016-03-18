@@ -23,7 +23,14 @@
 
                 }).state("root.signin",{
                 url: "/signin",
-                templateUrl: "Partials/Account/signin.tpl.html"});
+                templateUrl: "Partials/Account/signin.tpl.html"
+                })
+                .state("root.phones", {
+                    url: "/Phones",
+                    templateUrl: "Partials/Phone/phones.tpl.html",
+                    controller: "PhoneQueryController",
+                    controllerAs: "vm"
+                });
         }
     }
   

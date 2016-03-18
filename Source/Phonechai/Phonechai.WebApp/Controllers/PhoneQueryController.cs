@@ -10,15 +10,23 @@ using Phonechai.ViewModel;
 
 namespace Phonechai.WebApp.Controllers
 {
-    public class PhoneQueryController : ApiController
+    public class PhoneQueryController : BaseController
     {
+        PhoneService service;
+        public PhoneQueryController()
+        {
+            service = new PhoneService(db);
+        }
         public IHttpActionResult Get()
         {
-           PhoneService service=new PhoneService(new BusinessDbContext());
             List<PhoneViewModel> models = service.GetAll();
-
             return Ok(models);
+        }
 
+        public IHttpActionResult Get(string id)
+        {
+            PhoneViewModel viewModel = service.GetDetail(id);
+            return Ok(viewModel);
         }
     }
 }
